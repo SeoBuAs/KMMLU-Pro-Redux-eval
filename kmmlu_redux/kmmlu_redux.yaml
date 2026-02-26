@@ -1,0 +1,41 @@
+# KMMLU-Redux: 한국 국가 기술자격 시험 벤치마크 (LGAI-EXAONE/KMMLU-Redux)
+# Paper: https://arxiv.org/abs/2507.08924
+# Dataset: https://huggingface.co/datasets/LGAI-EXAONE/KMMLU-Redux
+
+task: kmmlu_redux
+description: "KMMLU-Redux: 한국 국가 기술자격(KNTQ) 기반 다지선다 평가 (2,587문항)"
+
+dataset_path: LGAI-EXAONE/KMMLU-Redux
+dataset_name: null
+dataset_kwargs: null
+
+training_split: null
+validation_split: null
+test_split: test
+
+output_type: generate_until
+num_fewshot: 0
+
+generation_kwargs:
+  temperature: 0.0
+  do_sample: false  
+  until:
+    - "</s>"
+    - "<|im_end|>" 
+    - "<|endoftext|>"
+
+doc_to_text: !function utils.doc_to_text
+doc_to_choice: !function utils.doc_to_choice
+doc_to_target: !function utils.doc_to_target
+process_results: !function utils.process_results
+
+target_delimiter: " "
+
+metric_list:
+  - metric: acc
+    aggregation: mean
+    higher_is_better: true
+
+metadata:
+  version: 1.0
+  reference: "https://arxiv.org/abs/2507.08924"
