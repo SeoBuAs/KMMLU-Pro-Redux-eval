@@ -14,7 +14,7 @@
 | **kmmlu_pro** | 한국 국가 **전문자격** 시험 기반 다지선다 | 2,822 | [LGAI-EXAONE/KMMLU-Pro](https://huggingface.co/datasets/LGAI-EXAONE/KMMLU-Pro) |
 | **kmmlu_redux** | 한국 국가 **기술자격**(KNTQ) 기반 다지선다 | 2,587 | [LGAI-EXAONE/KMMLU-Redux](https://huggingface.co/datasets/LGAI-EXAONE/KMMLU-Redux) |
 
-둘 다 0-shot, multiple choice, 정확도(accuracy)로 평가합니다.
+둘 다 0-shot, 정확도(accuracy)로 평가합니다.
 
 ---
 
