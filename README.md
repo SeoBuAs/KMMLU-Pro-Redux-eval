@@ -1,6 +1,7 @@
 # LM Eval Tasks: KMMLU-Pro & KMMLU-Redux
 
 한국어 전문/기술 자격 시험 벤치마크 **KMMLU-Pro**, **KMMLU-Redux**를 [lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness)로 평가하기 위한 태스크 정의입니다.
+이 모든 산출물은 [LG Aimers 8기]를 수행하며 만들어졌습니다.
 
 - **Paper**: [KMMLU-Pro / KMMLU-Redux](https://arxiv.org/abs/2507.08924)
 - **Datasets**: [HuggingFace — LGAI-EXAONE](https://huggingface.co/LGAI-EXAONE)
